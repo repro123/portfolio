@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Regular"),
+    url("./assets/font/Agustina.otf") format("woff");
+}
+
+.logo {
+  font-family: "Agustina Regular";
+  font-weight: normal;
+  font-size: 42px;
+}
+
+.open-menu {
+  color: white;
+}

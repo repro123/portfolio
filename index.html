@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bello Ibrahim, MD | Frontend Developer and Medical Doctor</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#" aria-label="home" class="logo"
+          >Bello Ibrahim <span></span
+        ></a>
+
+        <div>
+          <button
+            id="themeToggle"
+            aria-label="Choose theme"
+            aria-controls="dialog"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+          >
+            Chose theme
+          </button>
+          <dialog id="dialog" aria-modal="true" aria-labelledby="title">
+            <h2 id="title" class="sr-only">Select your desired theme</h2>
+            <ul>
+              <li>
+                <button><img src="" alt="" /> <span>Dark</span></button>
+              </li>
+              <li>
+                <button><img src="" alt="" /> <span>Light</span></button>
+              </li>
+              <li>
+                <button><img src="" alt="" /> <span>System</span></button>
+              </li>
+            </ul>
+          </dialog>
+          <div>
+            <button
+              id="navToggle"
+              aria-expanded="false"
+              aria-controls="nav"
+              aria-label="Open mobile nav"
+            >
+              <span>open menu</span> <span>close menu</span>
+            </button>
+            <nav id="nav">
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li>
+                  <a href="#faq"
+                    ><abbr title="Frequently Asked Questions">FAQs</abbr></a
+                  >
+                </li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </header>
+
+    <main>
+      <section id="hero"><div class="container"></div></section>
+
+      <section id="about"><div class="container"></div></section>
+
+      <section id="skills"><div class="container"></div></section>
+
+      <section id="projects"><div class="container"></div></section>
+
+      <section id="faq"><div class="container"></div></section>
+
+      <section id="contact"><div class="container"></div></section>
+
+      <button id="backToTop"></button>
+
+      <div class="sideSocialIcons"></div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="logo-p"></div>
+        <div class="social-icons"></div>
+        <div class="copyright"></div>
+      </div>
+    </footer>
+  </body>
+</html>
