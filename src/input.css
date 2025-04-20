@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Regular"),
+    url("../assets/font/Agustina.otf") format("woff");
+}
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: winter --default, sunset, luxury;
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  /* font family */
+  --font-karla: "Karla", monospace;
+  --font-lato: "Lato", sans-serif;
+  --font-augustina: "Agustina Regular", sans-serif;
+
+  /* font size */
+  --text-paragraph: clamp(1rem, 0.964rem + 0.179vw, 1.125rem);
+}
