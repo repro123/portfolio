@@ -18,10 +18,10 @@
   >
     <header class="fixed z-10 w-full px-2 top-4">
       <div
-        class="container flex items-center justify-between w-full p-2 mx-auto border rounded-full px-header-container border-primary bg-base-200"
+        class="container flex items-center justify-between w-full p-2 mx-auto border rounded-full px-header-container border-primary bg-base-200/80 lg:bg-base-200/30 backdrop-blur-sm"
       >
         <a href="#" aria-label="home" class="relative text-2xl font-augustina"
-          >Bello Ibrahim
+          >Bello
           <span class="absolute inset-0 w-full h-1 bg-primary top-full"></span
         ></a>
 
@@ -241,9 +241,9 @@
             class="flex items-center gap-2 mt-4 text-sm md:mt-8 lg:text-base font-karla"
           >
             <span
-              class="inline-block w-2 h-2 bg-green-600 rounded-full animate-pulse"
+              class="inline-block w-2 h-2 bg-green-600 rounded-full animate-ping"
             ></span>
-            <span>Currently available for freelance</span>
+            <span class="text-accent">Currently available for freelance</span>
           </p>
 
           <div
@@ -259,7 +259,7 @@
               href=""
               download=""
               target="_blank"
-              class="flex items-center flex-1 min-w-0 py-4 border-2 cursor-pointer btn btn-dash text-paragraph md:px-12"
+              class="flex items-center flex-1 min-w-0 py-4 mb-4 border-2 cursor-pointer btn btn-dash text-paragraph md:px-12 md:mb-0"
             >
               <span>
                 <svg
@@ -308,18 +308,22 @@
 
       <section id="about" class="px-4">
         <div
-          class="flex flex-col w-full max-w-2xl mx-auto md:pt-20 lg:max-w-4xl xl:max-w-6xl"
+          class="flex flex-col w-full max-w-2xl gap-8 mx-auto md:pt-20 lg:max-w-4xl xl:max-w-6xl"
         >
-          <h2>About Me <span></span></h2>
-          <div>
-            <div>
-              <h3>Frontend Developer & Medical Doctor</h3>
+          <h2 class="font-bold font-karla text-secondary-head">
+            About Me <span></span>
+          </h2>
+          <div class="flex flex-col-reverse gap-8 lg:flex-row lg:gap-12">
+            <div class="flex flex-col gap-4 lg:w-[60%]">
+              <h3 class="font-medium text-tertiary-head font-karla">
+                Frontend Developer & Medical Doctor
+              </h3>
               <p>
-                I’m Bello Ibrahim, a medical doctor with a scalpel-sharp eye for
-                detail and a passion for frontend development. By day, I
-                diagnose patients and advocate for healthcare innovation while
-                by night, I turn complex problems into sleek, user-friendly
-                solutions
+                I’m Bello Ibrahim, a medical doctor and self taugh developer
+                with a scalpel-sharp eye for detail and a passion for frontend
+                development. By day, I diagnose patients and advocate for
+                healthcare innovation while by night, I turn complex problems
+                into sleek, user-friendly solutions
               </p>
               <p>
                 My toolbox includes JavaScript, React, CSS, amongst others. I’m
@@ -332,68 +336,91 @@
                 of football.
               </p>
             </div>
-            <div>
-              <img src="./assets/images/hero.jpg" alt="" class="hero-image" />
+
+            <div class="lg:w-[40%]">
+              <img
+                src="./assets/images/hero.jpg"
+                alt="Developer coding on a computer"
+                class="rounded-xl"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="skills">
-        <div class="container">
+      <section id="skills" class="px-4">
+        <div
+          class="flex flex-col w-full max-w-2xl gap-8 mx-auto md:pt-20 lg:max-w-4xl xl:max-w-6xl"
+        >
           <h2>Technical Expertise & Skills</h2>
-          <div>
-            <img src="./assets/images/skills.jpg" alt="" />
-            <ul class="skills-icons">
-              <li>
-                <p>HTML</p>
+          <div
+            class="flex flex-col gap-8 lg:flex-row lg:gap-x-12 lg:items-center"
+          >
+            <img
+              src="./assets/images/skills.jpg"
+              alt="Technical skills of a developer"
+              class="rounded-xl lg:w-[40%]"
+            />
+            <ul class="flex flex-wrap items-center gap-4 lg:gap-8 lg:w-[60%]">
+              <li class="badge badge-soft badge-primary text-paragraph">
+                <p>
+                  <abbr
+                    title="Hypertext Markup Language"
+                    class="no-underline"
+                  ></abbr
+                  >HTML
+                </p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Vanilla CSS</p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Javascript</p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>React</p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>TailwindCSS</p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Accessibility</p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Git</p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Github</p>
               </li>
 
-              <li>
-                <p><abbr title="Search Engine Optimization">SEO</abbr></p>
+              <li class="badge badge-soft badge-primary text-paragraph">
+                <p>
+                  <abbr title="Search Engine Optimization" class="no-underline"
+                    >SEO</abbr
+                  >
+                </p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Daisy UI</p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Figma</p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Developer Tools</p>
               </li>
 
-              <li>
+              <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Cross Browser Testing</p>
               </li>
             </ul>
@@ -401,34 +428,50 @@
         </div>
       </section>
 
-      <section id="projects">
-        <div class="container"></div>
+      <section id="projects" class="px-4">
+        <div
+          class="flex flex-col w-full max-w-2xl gap-8 mx-auto md:pt-20 lg:max-w-4xl xl:max-w-6xl"
+        >
+          <h2>My Projects</h2>
+        </div>
       </section>
 
-      <section id="faq">
-        <div class="container">
+      <section id="faq" class="px-4">
+        <div
+          class="flex flex-col w-full max-w-2xl gap-4 mx-auto md:pt-20 lg:max-w-4xl xl:max-w-6xl"
+        >
           <h2>Frequently Asked Questions</h2>
           <p>
             Here are sme answers to some commonly asked questions about my
             background, experience and services
           </p>
 
-          <ul>
-            <li>
-              <h3>
-                <button>
-                  <span
+          <ul
+            class="flex flex-col gap-6 p-4 shadow-sm bg-base-200 rounded-box"
+            role="list"
+          >
+            <li class="flex flex-col gap-2">
+              <h3 class="">
+                <button
+                  type="button"
+                  aria-expanded="false"
+                  class="flex items-center justify-between w-full font-bold text-left cursor-pointer group accordion__button"
+                  aria-controls="panel1"
+                  id="button-1"
+                >
+                  <span class=""
                     >How do you balance your medical and development
                     careers?</span
                   >
-                  <span class="open-accordion">
+                  <span class="shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      class="block w-12 h-12 group-aria-expanded:hidden"
+                      aria-label="open accordion"
                     >
                       <path
                         stroke-linecap="round"
@@ -436,16 +479,15 @@
                         d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                       />
                     </svg>
-                  </span>
 
-                  <span class="close-acoordion">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      class="hidden w-12 h-12 group-aria-expanded:block"
+                      aria-label="close accordion"
                     >
                       <path
                         stroke-linecap="round"
@@ -457,7 +499,12 @@
                 </button>
               </h3>
 
-              <div>
+              <div
+                aria-labelledby="button-1"
+                id="panel1"
+                aria-hidden="true"
+                class="pt-2 ml-0 transition-all duration-500 opacity-100 aria-hidden:hidden starting:opacity-0 starting:-ml-36"
+              >
                 <p>
                   I allocate specific time blocks for both roles and leverage my
                   medical insights to enhance my development projects, without
@@ -466,21 +513,60 @@
               </div>
             </li>
 
-            <li>
+            <li class="flex flex-col gap-2">
               <h3>
-                <button>
+                <button
+                  type="button"
+                  aria-expanded="false"
+                  class="flex items-center justify-between w-full font-bold text-left cursor-pointer group accordion__button"
+                  aria-controls="panel2"
+                  id="button-2"
+                >
                   <span
                     >Are you open to collaborating with other developers?</span
                   >
-                  <span
-                    ><img src="" alt="open accordion" /><img
-                      src=""
-                      alt="close accordion"
-                  /></span>
+                  <span class="shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="block w-12 h-12 group-aria-expanded:hidden"
+                      aria-label="open accordion"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="hidden w-12 h-12 group-aria-expanded:block"
+                      aria-label="close accordion"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h14"
+                      />
+                    </svg>
+                  </span>
                 </button>
               </h3>
 
-              <div>
+              <div
+                aria-labelledby="button-2"
+                id="panel2"
+                aria-hidden="true"
+                class="pt-2 ml-0 transition-all duration-500 opacity-100 aria-hidden:hidden starting:opacity-0 starting:-ml-36"
+              >
                 <p>
                   Absolutely!. I'd love to work with other developers and learn
                   as much as I can from them, while leaving a positive impact
@@ -489,19 +575,58 @@
               </div>
             </li>
 
-            <li>
+            <li class="flex flex-col gap-2">
               <h3>
-                <button>
+                <button
+                  type="button"
+                  aria-expanded="false"
+                  class="flex items-center justify-between w-full font-bold text-left cursor-pointer group accordion__button"
+                  aria-controls="panel3"
+                  id="button-3"
+                >
                   <span>What technologies do you cirrently work with?</span>
-                  <span
-                    ><img src="" alt="open accordion" /><img
-                      src=""
-                      alt="close accordion"
-                  /></span>
+                  <span class="shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="block w-12 h-12 group-aria-expanded:hidden"
+                      aria-label="open accordion"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="hidden w-12 h-12 group-aria-expanded:block"
+                      aria-label="close accordion"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h14"
+                      />
+                    </svg>
+                  </span>
                 </button>
               </h3>
 
-              <div>
+              <div
+                aria-labelledby="button-3"
+                id="panel3"
+                aria-hidden="true"
+                class="pt-2 ml-0 transition-all duration-500 opacity-100 aria-hidden:hidden starting:opacity-0 starting:-ml-36"
+              >
                 <p>
                   I primarily work with HTML, Vanilla and Tailwind CSS,
                   JavaScript, React , and some component libraries like Daisy
@@ -512,19 +637,58 @@
               </div>
             </li>
 
-            <li>
+            <li class="flex flex-col gap-2">
               <h3>
-                <button>
+                <button
+                  type="button"
+                  aria-expanded="false"
+                  class="flex items-center justify-between w-full font-bold text-left cursor-pointer group accordion__button"
+                  aria-controls="panel4"
+                  id="button-4"
+                >
                   <span>Are you available for freelance work?</span>
-                  <span
-                    ><img src="" alt="open accordion" /><img
-                      src=""
-                      alt="close accordion"
-                  /></span>
+                  <span class="shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="block w-12 h-12 group-aria-expanded:hidden"
+                      aria-label="open accordion"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="hidden w-12 h-12 group-aria-expanded:block"
+                      aria-label="close accordion"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h14"
+                      />
+                    </svg>
+                  </span>
                 </button>
               </h3>
 
-              <div>
+              <div
+                aria-labelledby="button-4"
+                id="panel4"
+                aria-hidden="true"
+                class="pt-2 ml-0 transition-all duration-500 opacity-100 aria-hidden:hidden starting:opacity-0 starting:-ml-36"
+              >
                 <p>
                   Yes, I'm available for selective freelance projects,
                   particularly those in the healthcare and medical technology
