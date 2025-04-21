@@ -16,14 +16,16 @@
   <body
     class="flex flex-col gap-8 antialiased bg-base-100 text-base-content text-paragraph font-lato min-h-svh"
   >
-    <header class="sticky top-0 z-10 p-4 bg-base-200">
-      <div class="container flex items-center justify-between w-full mx-auto">
+    <header class="fixed z-10 w-full px-2 top-4">
+      <div
+        class="container flex items-center justify-between w-full p-2 mx-auto border rounded-full px-header-container border-primary bg-base-200"
+      >
         <a href="#" aria-label="home" class="relative text-2xl font-augustina"
           >Bello Ibrahim
           <span class="absolute inset-0 w-full h-1 bg-primary top-full"></span
         ></a>
 
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 lg:flex-row-reverse lg:gap-12">
           <!-- <button
             id="themeToggle"
             aria-label="Choose theme"
@@ -52,7 +54,7 @@
             <button
               tabindex="0"
               role="button"
-              class="m-1 text-base btn btn-dash"
+              class="m-1 text-paragraph btn btn-dash"
             >
               Theme
               <svg
@@ -110,7 +112,7 @@
               aria-expanded="false"
               aria-controls="nav"
               aria-label="Open mobile nav"
-              class="relative z-50 grid w-12 h-12 cursor-pointer place-items-center group peer"
+              class="relative z-50 grid w-12 h-12 cursor-pointer place-items-center group peer lg:hidden"
             >
               <span
                 ><svg
@@ -146,9 +148,12 @@
             </button>
             <nav
               id="nav"
-              class="absolute hidden max-md:peer-aria-expanded:block top-0 right-0 z-30 md:static h-screen md:h-auto max-md:w-[min(60%,_15rem)] md:flex max-md:starting:opacity-10 transition-all duration-300 max-md:opacity-100 max-md:scale-x-100 max-md:starting:scale-x-50 max-md:bg-base-300 p-4 pt-28"
+              class="absolute hidden max-lg:peer-aria-expanded:block top-0 right-0 z-30 lg:static h-screen lg:h-auto max-lg:w-[min(60%,_15rem)] lg:flex max-lg:starting:opacity-10 transition-all duration-300 max-lg:opacity-100 max-lg:scale-x-100 max-lg:starting:scale-x-50 max-lg:bg-base-300 p-4 pt-28 lg:p-0"
             >
-              <ul class="flex flex-col gap-6 font-bold font-karla" role="list">
+              <ul
+                class="flex flex-col gap-6 font-bold lg:flex-row font-karla lg:gap-12"
+                role="list"
+              >
                 <li>
                   <a href="#about" class="relative cursor-pointer group"
                     >About
@@ -208,11 +213,20 @@
       ></div>
     </header>
 
-    <main>
-      <section id="hero">
-        <div class="container">
-          <p>Hi there, my name is <span>Bello Ibrahim</span> <span>👋</span></p>
-          <h1>Turning ideas into <span>interactive reality</span></h1>
+    <main class="flex flex-col w-full gap-8">
+      <section id="hero" class="grid h-screen px-4 place-items-center">
+        <div
+          class="flex flex-col max-w-2xl mx-auto border lg:max-w-5xl xl:max-w-7xl"
+        >
+          <p class="font-karla">
+            Hi there, my name is
+            <span class="block font-bold text-primary text-main-head"
+              >Bello Ibrahim <span class="animate-bounce">👋</span></span
+            >
+          </p>
+          <h1 class="font-black text-main-head">
+            Turning ideas into <span>interactive reality</span>
+          </h1>
           <p>
             I'm a Frontend Developer experienced in building intuitive web
             experiences that convert visitors into fans - keeping into
