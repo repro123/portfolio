@@ -8,7 +8,7 @@
 
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: winter --default, sunset, luxury;
+  themes: winter --default, sunset, luxury, night;
 }
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
@@ -35,5 +35,9 @@
 @layer components {
   h2 {
     @apply font-bold font-karla text-secondary-head;
+  }
+
+  .navlink {
+    @apply font-karla text-paragraph hover:text-primary;
   }
 }
