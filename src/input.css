@@ -41,3 +41,10 @@
     @apply font-karla text-paragraph hover:text-primary;
   }
 }
+
+@layer utilities {
+  .size-12 {
+    width: 2rem;
+    height: 2rem;
+  }
+}

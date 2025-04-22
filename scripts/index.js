@@ -8,7 +8,8 @@ navToggleBtn.addEventListener("click", function () {
   navToggleBtn.setAttribute("aria-expanded", !isAriaExpanded);
 });
 
-// loop through the buttons to be able to add event listener to each button
+///////////////////////////////////////////////////////////////////
+// FAQ section - loop through the buttons to be able to add event listener to each button
 for (let i = 0; i < accordionBtn.length; i++) {
   const button = accordionBtn[i];
 
@@ -25,3 +26,31 @@ for (let i = 0; i < accordionBtn.length; i++) {
     accordionContent.setAttribute("aria-hidden", isAriaExpanded);
   });
 }
+
+//////////////////////////////////////////////////////////////////
+// back to top section
+const backToTopBtn = document.getElementById("backToTop");
+const scrollThreshold = 500; // 500px
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > scrollThreshold) {
+    backToTopBtn.classList.remove("opacity-0", "pointer-events-none");
+    backToTopBtn.classList.add("opacity-100", "pointer-events-auto");
+  } else {
+    backToTopBtn.classList.add("opacity-0", "pointer-events-none");
+    backToTopBtn.classList.remove("opacity-100", "pointer-events-auto");
+  }
+});
+
+// smooth scroll to top when the button is clicked
+backToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+//////////////////////////////////////////////////////////////////
+const copyrightYear = document.getElementById("copyrightYear");
+const currentYear = new Date().getFullYear(); // get the current year
+copyrightYear.textContent = currentYear; // set the text content of the copyright year to the current year

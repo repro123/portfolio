@@ -432,7 +432,7 @@
           </p>
 
           <ul
-            class="flex flex-col gap-4 p-4 mt-4 shadow-sm bg-base-200 rounded-box"
+            class="flex flex-col w-full max-w-4xl gap-4 p-4 mx-auto mt-4 overflow-hidden shadow-sm bg-base-200 rounded-box"
             role="list"
           >
             <li class="flex flex-col gap-2">
@@ -785,10 +785,9 @@
         </div>
       </section>
 
-      <a
-        href="#hero"
+      <button
         id="backToTop"
-        class="fixed flex items-center gap-2 btn btn-soft btn-primary w-fit bottom-4 right-4 lg:bottom-8 lg:right-8"
+        class="fixed flex items-center gap-2 transition-opacity duration-300 opacity-0 pointer-events-none btn btn-soft btn-primary w-fit bottom-4 right-4 lg:bottom-8 lg:right-8"
       >
         <span>Back to top</span>
         <span class="inline-block animate-bounce">
@@ -807,7 +806,7 @@
             />
           </svg>
         </span>
-      </a>
+      </button>
     </main>
 
     <footer
