@@ -105,46 +105,29 @@
             <button
               id="navToggle"
               aria-expanded="false"
-              aria-controls="nav"
+              aria-controls="dialog"
               aria-label="Open mobile nav"
               class="relative z-50 grid w-12 h-12 cursor-pointer place-items-center group peer lg:hidden"
             >
-              <span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="block size-6 group-aria-expanded:hidden"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-                  />
-                </svg>
-
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="hidden size-6 group-aria-expanded:block"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18 18 6M6 6l12 12"
-                  />
-                </svg>
-              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="block size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                />
+              </svg>
             </button>
-            <nav
-              id="nav"
-              class="absolute hidden max-lg:peer-aria-expanded:block top-0 right-0 z-30 lg:static h-screen lg:h-auto max-lg:w-[min(60%,_15rem)] lg:flex max-lg:starting:opacity-10 transition-all duration-300 max-lg:opacity-100 max-lg:scale-x-100 max-lg:starting:scale-x-50 max-lg:bg-base-300 p-4 pt-28 lg:p-0"
-            >
+
+            <dialog id="dialog"></dialog>
+
+            <nav class="hidden lg:flex">
               <ul
                 class="flex flex-col gap-6 font-bold lg:flex-row font-karla lg:gap-12"
                 role="list"

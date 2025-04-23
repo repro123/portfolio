@@ -26,10 +26,10 @@ const failAlert = document.getElementById("failAlert");
 
 ///////////////////////////////////////////////////////////////////
 // mobile nav toggle button - add event listener to the button to toggle the aria-expanded attribute
-navToggleBtn.addEventListener("click", function () {
-  const isAriaExpanded = navToggleBtn.getAttribute("aria-expanded") === "true"; // isAriaExpanded is false
-  navToggleBtn.setAttribute("aria-expanded", !isAriaExpanded);
-});
+// navToggleBtn.addEventListener("click", function () {
+//   const isAriaExpanded = navToggleBtn.getAttribute("aria-expanded") === "true"; // isAriaExpanded is false
+//   navToggleBtn.setAttribute("aria-expanded", !isAriaExpanded);
+// });
 
 ///////////////////////////////////////////////////////////////////
 // FAQ section - loop through the buttons to be able to add event listener to each button
