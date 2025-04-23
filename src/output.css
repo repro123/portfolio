@@ -1624,10 +1624,6 @@
       }
     }
   }
-  .blur {
-    --tw-blur: blur(8px);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
   .backdrop-blur-sm {
     --tw-backdrop-blur: blur(var(--blur-sm));
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
@@ -2142,39 +2138,6 @@
   }
 }
 @layer base {
-  :where(:root),:root:has(input.theme-controller[value=winter]:checked),[data-theme=winter] {
-    color-scheme: light;
-    --color-base-100: oklch(100% 0 0);
-    --color-base-200: oklch(97.466% 0.011 259.822);
-    --color-base-300: oklch(93.268% 0.016 262.751);
-    --color-base-content: oklch(41.886% 0.053 255.824);
-    --color-primary: oklch(56.86% 0.255 257.57);
-    --color-primary-content: oklch(91.372% 0.051 257.57);
-    --color-secondary: oklch(42.551% 0.161 282.339);
-    --color-secondary-content: oklch(88.51% 0.032 282.339);
-    --color-accent: oklch(59.939% 0.191 335.171);
-    --color-accent-content: oklch(11.988% 0.038 335.171);
-    --color-neutral: oklch(19.616% 0.063 257.651);
-    --color-neutral-content: oklch(83.923% 0.012 257.651);
-    --color-info: oklch(88.127% 0.085 214.515);
-    --color-info-content: oklch(17.625% 0.017 214.515);
-    --color-success: oklch(80.494% 0.077 197.823);
-    --color-success-content: oklch(16.098% 0.015 197.823);
-    --color-warning: oklch(89.172% 0.045 71.47);
-    --color-warning-content: oklch(17.834% 0.009 71.47);
-    --color-error: oklch(73.092% 0.11 20.076);
-    --color-error-content: oklch(14.618% 0.022 20.076);
-    --radius-selector: 1rem;
-    --radius-field: 0.5rem;
-    --radius-box: 1rem;
-    --size-selector: 0.25rem;
-    --size-field: 0.25rem;
-    --border: 1px;
-    --depth: 0;
-    --noise: 0;
-  }
-}
-@layer base {
   :root:has(input.theme-controller[value=winter]:checked),[data-theme=winter] {
     color-scheme: light;
     --color-base-100: oklch(100% 0 0);
@@ -2523,59 +2486,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-blur {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-brightness {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-contrast {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-grayscale {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-hue-rotate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-invert {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-opacity {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-saturate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-sepia {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-drop-shadow-size {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-backdrop-blur {
   syntax: "*";
   inherits: false;
@@ -2672,19 +2582,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-blur: initial;
-      --tw-brightness: initial;
-      --tw-contrast: initial;
-      --tw-grayscale: initial;
-      --tw-hue-rotate: initial;
-      --tw-invert: initial;
-      --tw-opacity: initial;
-      --tw-saturate: initial;
-      --tw-sepia: initial;
-      --tw-drop-shadow: initial;
-      --tw-drop-shadow-color: initial;
-      --tw-drop-shadow-alpha: 100%;
-      --tw-drop-shadow-size: initial;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;

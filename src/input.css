@@ -8,7 +8,7 @@
 
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: winter --default, sunset, luxury, night;
+  themes: winter, sunset, luxury, night;
 }
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

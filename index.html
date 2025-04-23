@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" data-theme="night">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/output.css" />
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme");
+        document.documentElement.setAttribute(
+          "data-theme",
+          savedTheme || "night"
+        );
+      })();
+    </script>
+    <script src="./scripts/theme.js" defer></script>
     <title>Bello Ibrahim, MD | Frontend Developer and Medical Doctor</title>
   </head>
   <body
@@ -54,8 +64,8 @@
                   type="radio"
                   name="theme-dropdown"
                   class="justify-start text-base cursor-pointer theme-controller btn btn-block btn-ghost"
-                  aria-label="Default"
-                  value="default"
+                  aria-label="winter"
+                  value="winter"
                 />
               </li>
               <div class="m-0 divider divider-primary"></div>
