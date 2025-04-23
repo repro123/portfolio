@@ -758,29 +758,56 @@
                 class="w-full resize-none textarea data-invalid:input-error"
                 required
               ></textarea>
-              <p class="text-error" aria-live="polite"></p>
+              <p class="text-error" aria-live="polite" id="messageError"></p>
             </div>
 
-            <button type="submit" class="btn btn-block btn-outline">
-              Send Message
-            </button>
-
-            <!-- <div role="alert" class="alert alert-success">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6 stroke-current shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
+            <div class="flex flex-col gap-2">
+              <button
+                type="submit"
+                id="submitBtn"
+                class="btn btn-block btn-outline"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <span>Your email has been sent!</span> 
-            </div>-->
+                Send Message
+              </button>
+
+              <div
+                role="alert"
+                id="successAlert"
+                class="hidden alert alert-success"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 stroke-current shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>Your message has been sent!</span>
+              </div>
+
+              <div role="alert" id="failAlert" class="hidden alert alert-error">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 stroke-current shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>Error! Message not sent.</span>
+              </div>
+            </div>
           </form>
         </div>
       </section>
@@ -1146,6 +1173,11 @@
       </div>
     </footer>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" src="./scripts/init.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
