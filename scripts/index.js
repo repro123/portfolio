@@ -2,8 +2,11 @@
 /////////////////////////////////////////////////////////////
 // selecting all the elements that will be used in the script
 
-// mobile nav tggle button
+// mobile nav tggle elemnts
 const navToggleBtn = document.getElementById("navToggle");
+const navDialog = document.getElementById("dialog");
+const closeDialogBtn = document.getElementById("closeDialog");
+const navlinks = document.querySelectorAll(".navlink");
 
 // selecting all the buttons in the FAQ section
 const accordionBtn = document.querySelectorAll(".accordion__button");
@@ -26,10 +29,37 @@ const failAlert = document.getElementById("failAlert");
 
 ///////////////////////////////////////////////////////////////////
 // mobile nav toggle button - add event listener to the button to toggle the aria-expanded attribute
-// navToggleBtn.addEventListener("click", function () {
-//   const isAriaExpanded = navToggleBtn.getAttribute("aria-expanded") === "true"; // isAriaExpanded is false
-//   navToggleBtn.setAttribute("aria-expanded", !isAriaExpanded);
-// });
+navToggleBtn.addEventListener("click", function () {
+  this.setAttribute("aria-expanded", "true");
+  navDialog.showModal(); // show the dialog when the button is clicked
+});
+
+// close nav
+closeDialogBtn.addEventListener("click", closeDialog); // close the dialog when the close button is clicked
+
+navlinks.forEach((link) => {
+  link.addEventListener("click", closeDialog); // close the dialog when a nav link is clicked
+  link.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" || event.key === " ") {
+      closeDialog(); // close the dialog when the enter or space key is pressed
+    }
+  });
+});
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= 768) closeDialog(); // close the dialog when the window is resized to desktop size
+});
+
+navDialog.addEventListener("click", function (event) {
+  if (event.target === navDialog) {
+    closeDialog(); // close the dialog when the overlay is clicked
+  }
+});
+
+function closeDialog() {
+  navDialog.close(); // Close the dialog when the overlay is clicked
+  navToggleBtn.setAttribute("aria-expanded", "false"); // Set aria-expanded to false when the dialog is closed
+}
 
 ///////////////////////////////////////////////////////////////////
 // FAQ section - loop through the buttons to be able to add event listener to each button

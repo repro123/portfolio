@@ -34,7 +34,7 @@
           <span class="absolute inset-0 w-full h-1 bg-primary top-full"></span
         ></a>
 
-        <div class="flex items-center gap-4 lg:flex-row-reverse lg:gap-12">
+        <div class="flex items-center gap-4 md:flex-row-reverse lg:gap-12">
           <div class="z-50 dropdown">
             <button
               tabindex="0"
@@ -107,7 +107,7 @@
               aria-expanded="false"
               aria-controls="dialog"
               aria-label="Open mobile nav"
-              class="relative z-50 grid w-12 h-12 cursor-pointer place-items-center group peer lg:hidden"
+              class="relative z-50 grid w-12 h-12 cursor-pointer place-items-center group peer md:hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="block size-6"
+                class="size-6"
               >
                 <path
                   stroke-linecap="round"
@@ -125,15 +125,105 @@
               </svg>
             </button>
 
-            <dialog id="dialog"></dialog>
+            <dialog
+              id="dialog"
+              role="dialog"
+              class="items-stretch justify-items-end modal"
+            >
+              <div
+                class="flex flex-col gap-8 border rounded-r-none max-w-2xs modal-box"
+              >
+                <button
+                  id="closeDialog"
+                  aria-label="close mobile nav dialog"
+                  class="self-end mt-2 modal-action"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18 18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                <ul
+                  class="flex flex-col gap-6 font-bold font-karla text-paragraph"
+                  role="list"
+                >
+                  <li>
+                    <a
+                      href="#about"
+                      class="relative cursor-pointer group navlink"
+                      >About
+                      <span
+                        class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                      ></span
+                    ></a>
+                  </li>
 
-            <nav class="hidden lg:flex">
+                  <li>
+                    <a
+                      href="#skills"
+                      class="relative cursor-pointer group navlink"
+                      >Skills
+                      <span
+                        class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                      ></span
+                    ></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#projects"
+                      class="relative cursor-pointer group navlink"
+                      >Projects
+                      <span
+                        class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                      ></span
+                    ></a>
+                  </li>
+
+                  <li>
+                    <a href="#faq" class="relative cursor-pointer group navlink"
+                      ><abbr
+                        title="Frequently Asked Questions"
+                        class="no-underline"
+                        >FAQs</abbr
+                      >
+                      <span
+                        class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                      ></span
+                    ></a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#contact"
+                      class="relative cursor-pointer group navlink"
+                      >Contact
+                      <span
+                        class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                      ></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </dialog>
+
+            <nav class="hidden md:flex">
               <ul
-                class="flex flex-col gap-6 font-bold lg:flex-row font-karla lg:gap-12"
+                class="flex flex-row gap-6 font-bold font-karla lg:gap-12"
                 role="list"
               >
                 <li>
-                  <a href="#about" class="relative cursor-pointer group navlink"
+                  <a href="#about" class="relative cursor-pointer group"
                     >About
                     <span
                       class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
@@ -142,9 +232,7 @@
                 </li>
 
                 <li>
-                  <a
-                    href="#skills"
-                    class="relative cursor-pointer group navlink"
+                  <a href="#skills" class="relative cursor-pointer group"
                     >Skills
                     <span
                       class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
@@ -153,9 +241,7 @@
                 </li>
 
                 <li>
-                  <a
-                    href="#projects"
-                    class="relative cursor-pointer group navlink"
+                  <a href="#projects" class="relative cursor-pointer group"
                     >Projects
                     <span
                       class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
@@ -164,7 +250,7 @@
                 </li>
 
                 <li>
-                  <a href="#faq" class="relative cursor-pointer group navlink"
+                  <a href="#faq" class="relative cursor-pointer group"
                     ><abbr
                       title="Frequently Asked Questions"
                       class="no-underline"
@@ -177,9 +263,7 @@
                 </li>
 
                 <li>
-                  <a
-                    href="#contact"
-                    class="relative cursor-pointer group navlink"
+                  <a href="#contact" class="relative cursor-pointer group"
                     >Contact
                     <span
                       class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
@@ -191,10 +275,6 @@
           </div>
         </div>
       </div>
-      <div
-        id="overlay"
-        class="absolute hidden top-0 left-0 right-0 z-[3] w-screen h-screen backdrop-blur-xs bg-base-300/5 pointer-events-none transition-all duration-300"
-      ></div>
     </header>
 
     <main class="relative flex flex-col w-full gap-12">
