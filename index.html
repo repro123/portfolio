@@ -310,14 +310,12 @@
             <span class="text-accent">Currently available for freelance</span>
           </p>
 
-          <div
-            class="flex items-center mt-auto md:mt-8 md:flex-col md:items-start"
-          >
+          <div class="flex items-start mt-8 md:flex-col">
             <a
               href=""
               download=""
               target="_blank"
-              class="flex items-center flex-1 min-w-0 py-4 mb-4 cursor-pointer btn-primary btn btn-dash text-paragraph md:px-12 md:mb-0"
+              class="flex items-center flex-1 min-w-0 py-4 cursor-pointer btn-primary btn btn-dash text-paragraph md:px-12 md:mb-0"
             >
               <span>
                 <svg
@@ -400,6 +398,7 @@
                 src="./assets/images/hero.jpg"
                 alt="Developer coding on a computer"
                 class="rounded-xl"
+                loading="lazy"
               />
             </div>
           </div>
@@ -418,6 +417,7 @@
               src="./assets/images/skills.jpg"
               alt="Technical skills of a developer"
               class="rounded-xl lg:w-[40%]"
+              loading="lazy"
             />
             <ul class="flex flex-wrap items-center gap-4 lg:gap-8 lg:w-[60%]">
               <li class="badge badge-soft badge-primary text-paragraph">
@@ -490,7 +490,384 @@
         <div
           class="flex flex-col w-full max-w-2xl gap-8 mx-auto md:pt-20 lg:max-w-4xl xl:max-w-6xl"
         >
-          <h2>My Projects</h2>
+          <div class="flex flex-col gap-4">
+            <h2>My Projects</h2>
+            <p>
+              Here are some of the projects I have worked on. I am always
+              looking for new challenges and opportunities to learn and grow as
+              a developer.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-12"
+          >
+            <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="Shoes"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="Shoes"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="Shoes"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="Shoes"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="Shoes"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="Shoes"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p>
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
