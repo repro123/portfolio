@@ -223,7 +223,7 @@
                 role="list"
               >
                 <li>
-                  <a href="#about" class="relative cursor-pointer group"
+                  <a href="#about" class="relative cursor-pointer group navlink"
                     >About
                     <span
                       class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
@@ -232,7 +232,9 @@
                 </li>
 
                 <li>
-                  <a href="#skills" class="relative cursor-pointer group"
+                  <a
+                    href="#skills"
+                    class="relative cursor-pointer group navlink"
                     >Skills
                     <span
                       class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
@@ -241,7 +243,9 @@
                 </li>
 
                 <li>
-                  <a href="#projects" class="relative cursor-pointer group"
+                  <a
+                    href="#projects"
+                    class="relative cursor-pointer group navlink"
                     >Projects
                     <span
                       class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
@@ -250,7 +254,7 @@
                 </li>
 
                 <li>
-                  <a href="#faq" class="relative cursor-pointer group"
+                  <a href="#faq" class="relative cursor-pointer group navlink"
                     ><abbr
                       title="Frequently Asked Questions"
                       class="no-underline"
@@ -263,7 +267,9 @@
                 </li>
 
                 <li>
-                  <a href="#contact" class="relative cursor-pointer group"
+                  <a
+                    href="#contact"
+                    class="relative cursor-pointer group navlink"
                     >Contact
                     <span
                       class="absolute w-full h-[2px] bg-base-content left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
@@ -315,7 +321,7 @@
               href=""
               download=""
               target="_blank"
-              class="flex items-center flex-1 min-w-0 py-4 cursor-pointer btn-primary btn btn-dash text-paragraph md:px-12 md:mb-0"
+              class="flex items-center flex-1 min-w-0 py-4 cursor-pointer border-primary btn-primary btn btn-soft text-paragraph md:px-12 md:mb-0"
             >
               <span>
                 <svg
@@ -342,7 +348,7 @@
 
         <a
           href="#about"
-          class="absolute hidden md:block bottom-6 animate-bounce md:tooltip"
+          class="absolute hidden md:block bottom-6 text-primary animate-bounce md:tooltip"
           data-tip="Scroll down"
         >
           <svg
@@ -481,6 +487,14 @@
               <li class="badge badge-soft badge-primary text-paragraph">
                 <p>Cross Browser Testing</p>
               </li>
+
+              <li class="badge badge-soft badge-primary text-paragraph">
+                <p>Website Testing</p>
+              </li>
+
+              <li class="badge badge-soft badge-primary text-paragraph">
+                <p>Responsiveness</p>
+              </li>
             </ul>
           </div>
         </div>
@@ -507,17 +521,21 @@
             >
               <figure>
                 <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
+                  src="./assets/projects/guessthegame.PNG"
+                  alt="Guess the game"
                   loading="lazy"
                   class="transition-transform duration-300 hover:scale-105"
                 />
               </figure>
               <div class="gap-4 p-4 card-body">
-                <h2 class="card-title">Card Title</h2>
+                <h2 class="card-title">Guess The Number Game</h2>
                 <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
+                  A logical game where the player has to guess a number from a
+                  range of numbers, with 3 difficulty modes. Features includes
+                  dynamic feedback messages, color-coded UI indicators, high
+                  score tracking, among others. View the
+                  <code>README.md</code> file in the repository for more
+                  details.
                 </p>
                 <div class="justify-end card-actions">
                   <p class="badge badge-soft badge-primary">HTML</p>
@@ -525,7 +543,10 @@
                   <p class="badge badge-soft badge-primary">JavaScript</p>
                 </div>
                 <div class="justify-end card-actions">
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                  <a
+                    href="https://github.com/repro123/guess-the-number.git"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
                     ><span>Repository</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -533,7 +554,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      class="size-3"
                     >
                       <path
                         stroke-linecap="round"
@@ -542,7 +563,10 @@
                       />
                     </svg>
                   </a>
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
+                  <a
+                    href="https://guessthenumber-repro.vercel.app/"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
                     ><span>Live Site</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -550,7 +574,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      class="size-3"
                     >
                       <path
                         stroke-linecap="round"
@@ -564,6 +588,287 @@
             </div>
 
             <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="./assets/projects/nexcentcopy.PNG"
+                  alt="Nexcent Landing Page"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Nexcent Landing Page</h2>
+                <p>
+                  A modern, accessible landing page featuring dark mode toggle
+                  and mobile-responsive navigation.
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a
+                    href="https://github.com/repro123/Nexcent-landing.git"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://nexcent-repro.vercel.app/"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="./assets/projects/joblistingscopy.PNG"
+                  alt="Job Listings Page"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Job Listings with Filtering</h2>
+                <p>
+                  A dynamic frontend project showcasing job listings with
+                  interactive filtering. This project displays job listings that
+                  are fetched from a JSON data file. Users can filter the jobs
+                  based on role, level, languages, and tools. The interface
+                  dynamically updates the listings as filters are applied or
+                  removed.
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a
+                    href="https://github.com/repro123/job-listing.git"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://job-listing-repro.vercel.app/"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="./assets/projects/splittercopy.PNG"
+                  alt="Tip calculator"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Tip Calculator</h2>
+                <p>
+                  This is a simple tip calculator that allows users to input the
+                  total bill amount, the percentage of tip they want to give,
+                  and the number of people sharing the bill. It then calculates
+                  the tip amount, total amount to be paid, and amount each
+                  person needs to pay. It is user-friendly and responsive,
+                  ensuring a seamless experience across devices, and also
+                  includes features such as error handling for invalid inputs
+                  and a reset button to clear the form.
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a
+                    href="https://github.com/repro123/tip-calculator.git"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://repro123.github.io/tip-calculator/"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="border shadow-sm border-primary card card-lg bg-base-300"
+            >
+              <figure>
+                <img
+                  src="./assets/projects/ciphercopy.PNG"
+                  alt="Cipher Brainiac Landing Page"
+                  loading="lazy"
+                  class="transition-transform duration-300 hover:scale-105"
+                />
+              </figure>
+              <div class="gap-4 p-4 card-body">
+                <h2 class="card-title">Cipher EdTech Landing Page</h2>
+                <p>
+                  Next-generation education platform for tech skills
+                  acquisition, featuring responsive design and interactive
+                  learning experiences. I worked with a UI/UX designer to create
+                  a modern, user-friendly interface that enhances the learning
+                  experience.
+                </p>
+                <div class="justify-end card-actions">
+                  <p class="badge badge-soft badge-primary">HTML</p>
+                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
+                  <p class="badge badge-soft badge-primary">JavaScript</p>
+                </div>
+                <div class="justify-end card-actions">
+                  <a
+                    href="https://github.com/repro123/cipher-brainiac.git"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
+                    ><span>Repository</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://cipher-brainiac-eight.vercel.app/"
+                    target="_blank"
+                    class="items-center gap-2 btn btn-primary"
+                    ><span>Live Site</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div
               class="border shadow-sm border-primary card card-lg bg-base-300"
             >
               <figure>
@@ -594,7 +899,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      class="size-3"
                     >
                       <path
                         stroke-linecap="round"
@@ -611,7 +916,7 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="size-6"
+                      class="size-3"
                     >
                       <path
                         stroke-linecap="round"
@@ -622,252 +927,15 @@
                   </a>
                 </div>
               </div>
-            </div>
-
-            <div
-              class="border shadow-sm border-primary card card-lg bg-base-300"
-            >
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                  loading="lazy"
-                  class="transition-transform duration-300 hover:scale-105"
-                />
-              </figure>
-              <div class="gap-4 p-4 card-body">
-                <h2 class="card-title">Card Title</h2>
-                <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
-                </p>
-                <div class="justify-end card-actions">
-                  <p class="badge badge-soft badge-primary">HTML</p>
-                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
-                  <p class="badge badge-soft badge-primary">JavaScript</p>
-                </div>
-                <div class="justify-end card-actions">
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
-                    ><span>Repository</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                      />
-                    </svg>
-                  </a>
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
-                    ><span>Live Site</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="border shadow-sm border-primary card card-lg bg-base-300"
-            >
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                  loading="lazy"
-                  class="transition-transform duration-300 hover:scale-105"
-                />
-              </figure>
-              <div class="gap-4 p-4 card-body">
-                <h2 class="card-title">Card Title</h2>
-                <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
-                </p>
-                <div class="justify-end card-actions">
-                  <p class="badge badge-soft badge-primary">HTML</p>
-                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
-                  <p class="badge badge-soft badge-primary">JavaScript</p>
-                </div>
-                <div class="justify-end card-actions">
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
-                    ><span>Repository</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                      />
-                    </svg>
-                  </a>
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
-                    ><span>Live Site</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="border shadow-sm border-primary card card-lg bg-base-300"
-            >
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                  loading="lazy"
-                  class="transition-transform duration-300 hover:scale-105"
-                />
-              </figure>
-              <div class="gap-4 p-4 card-body">
-                <h2 class="card-title">Card Title</h2>
-                <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
-                </p>
-                <div class="justify-end card-actions">
-                  <p class="badge badge-soft badge-primary">HTML</p>
-                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
-                  <p class="badge badge-soft badge-primary">JavaScript</p>
-                </div>
-                <div class="justify-end card-actions">
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
-                    ><span>Repository</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                      />
-                    </svg>
-                  </a>
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
-                    ><span>Live Site</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="border shadow-sm border-primary card card-lg bg-base-300"
-            >
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                  loading="lazy"
-                  class="transition-transform duration-300 hover:scale-105"
-                />
-              </figure>
-              <div class="gap-4 p-4 card-body">
-                <h2 class="card-title">Card Title</h2>
-                <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
-                </p>
-                <div class="justify-end card-actions">
-                  <p class="badge badge-soft badge-primary">HTML</p>
-                  <p class="badge badge-soft badge-primary">Tailwind CSS</p>
-                  <p class="badge badge-soft badge-primary">JavaScript</p>
-                </div>
-                <div class="justify-end card-actions">
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
-                    ><span>Repository</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                      />
-                    </svg>
-                  </a>
-                  <a target="_blank" class="items-center gap-2 btn btn-primary"
-                    ><span>Live Site</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
+            </div> -->
           </div>
+
+          <a
+            href="https://github.com/repro123?tab=repositories"
+            target="_blank"
+            class="btn btn-soft border-primary btn-primary w-fit"
+            >View More Projects</a
+          >
         </div>
       </section>
 
@@ -1215,7 +1283,7 @@
               <button
                 type="submit"
                 id="submitBtn"
-                class="btn btn-block btn-outline"
+                class="btn btn-soft border-primary btn-primary"
               >
                 Send Message
               </button>
@@ -1264,7 +1332,7 @@
 
       <button
         id="backToTop"
-        class="fixed flex items-center gap-2 transition-opacity duration-300 opacity-0 pointer-events-none btn btn-soft btn-primary w-fit bottom-4 right-4 lg:bottom-8 lg:right-8"
+        class="fixed flex items-center gap-2 transition-opacity duration-300 opacity-0 pointer-events-none border-primary btn btn-soft btn-primary w-fit bottom-4 right-4 lg:bottom-8 lg:right-8"
       >
         <span>Back to top</span>
         <span class="inline-block animate-bounce">

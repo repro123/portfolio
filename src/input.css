@@ -51,4 +51,8 @@
     width: 2rem;
     height: 2rem;
   }
+  .size-3 {
+    width: 1rem;
+    height: 1rem;
+  }
 }

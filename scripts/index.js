@@ -38,7 +38,13 @@ navToggleBtn.addEventListener("click", function () {
 closeDialogBtn.addEventListener("click", closeDialog); // close the dialog when the close button is clicked
 
 navlinks.forEach((link) => {
-  link.addEventListener("click", closeDialog); // close the dialog when a nav link is clicked
+  link.addEventListener("click", function (e) {
+    e.preventDefault(); // prevent the default action of the link
+    const targetId = this.getAttribute("href").substring(1); // get the href attribute of the link
+    const targetElement = document.getElementById(targetId); // select the target element with the id
+    targetElement.scrollIntoView({ behavior: "smooth" }); // scroll to the target element smoothly
+    closeDialog(); // close the dialog when a nav link is clicked
+  });
   link.addEventListener("keydown", function (event) {
     if (event.key === "Enter" || event.key === " ") {
       closeDialog(); // close the dialog when the enter or space key is pressed
