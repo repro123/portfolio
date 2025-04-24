@@ -252,3 +252,25 @@ form.addEventListener("submit", async (event) => {
     }, 3000); // 3 seconds delay
   }
 });
+
+///////////////////////////////////////////////////////////////////
+// fade in animation for the elements on the page
+const fadeInElements = document.querySelectorAll(".fade-in-section"); // Select all elements with the class "fade-in"
+const observerOptions = {
+  root: null, // Use the viewport as the root
+  rootMargin: "0px",
+  threshold: 0.2, // Set the threshold for when the element should be considered in view
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible"); // Add the fade-in class when the element is in view
+      observer.unobserve(entry.target); // Stop observing the element after it has faded in
+    }
+  });
+}, observerOptions);
+
+fadeInElements.forEach((element) => {
+  observer.observe(element); // Observe each fade-in element
+});
