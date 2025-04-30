@@ -259,7 +259,7 @@ const fadeInElements = document.querySelectorAll(".fade-in-section"); // Select 
 const observerOptions = {
   root: null, // Use the viewport as the root
   rootMargin: "0px",
-  threshold: 0.2, // Set the threshold for when the element should be considered in view
+  threshold: 0.1, // Set the threshold for when the element should be considered in view
 };
 
 const observer = new IntersectionObserver((entries) => {
